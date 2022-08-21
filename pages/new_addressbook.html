@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../css/new_addressbook.css">
     <script type="text/javascript" src="../js/AddressBook.js"></script>
     <script type="text/javascript" src="../js/AddFormValidation.js"></script>
-    <script type="text/javascript" src="../js/site_properties.js"></script>
     <title>Address Book App</title>
 </head>
 <!-- UC 1 -->
@@ -31,8 +30,8 @@
             <div class="form-head">
                 <span class="form-head-text">PERSON ADDRESS FORM</span>
                 <span class="cross-icon">
-                    <span class="close">&times;</span>
                     <ion-icon class="close-circle" name="close-circle"></ion-icon>
+                    <a href="../pages/new_addressbook.html"></a>
                 </span>
             </div>
             <!-- UC 3 -->
@@ -406,11 +405,12 @@
                 <label class="label-text-phone" for="phone">Phone Number</label>
                 <input class="input" type="phone" id="phone" name="phone" required>
                 <error-output class="phone-error"></error-output>
-
+                <!-- UC 5 -->
                 <div class="add-reset">
                     <button type="submit" class="addButton" id="addButton">Submit</button>
                     <button type="reset" class="resetButton" id="resetButton">Reset</button>
                 </div>
+
             </div>
 
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
